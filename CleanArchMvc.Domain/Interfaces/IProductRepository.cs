@@ -18,4 +18,3 @@ namespace CleanArchMvc.Domain.Interfaces
         Task<Category> RemoveAsync(Product category);
     }
 }
-}
