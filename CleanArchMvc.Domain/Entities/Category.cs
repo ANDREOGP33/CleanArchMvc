@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace CleanArchMvc.Domain.Entities
 {
-    public sealed class Category
+    public sealed class Category : Entity
     {
-        public int Id { get; private set; }
         public string Name { get; private  set; }
         public Category(String name)
         {
@@ -22,6 +21,10 @@ namespace CleanArchMvc.Domain.Entities
             ValidateDomain(name);
         }
 
+        public void Update(string name)
+        {
+            ValidateDomain(name);
+        }
         public ICollection<Product> Products { get; set; }
 
         private void ValidateDomain(String name)
