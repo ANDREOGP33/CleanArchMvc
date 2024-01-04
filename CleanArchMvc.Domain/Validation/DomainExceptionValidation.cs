@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CleanArchMvc.Domain.Validation
 {
-    public class DomainExeceptionValidation : Exception
+    public class DomainExceptionValidation : Exception
     {
-        public DomainExeceptionValidation(string error) : base(error)
+        public DomainExceptionValidation(string error) : base(error)
         {           
         }
 
@@ -16,7 +16,7 @@ namespace CleanArchMvc.Domain.Validation
         {
             if (hasError)
             {
-                throw new DomainExeceptionValidation(error);
+                throw new DomainExceptionValidation(error);
             }
         }
     }
