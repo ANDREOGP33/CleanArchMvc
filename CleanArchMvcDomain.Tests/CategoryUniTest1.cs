@@ -1,5 +1,6 @@
 using CleanArchMvc.Domain.Entities;
 using FluentAssertions;
+using Xunit;
 
 namespace CleanArchMvcDomain.Tests
 {
